@@ -1,0 +1,46 @@
+<HTML> 
+<Title> CGI Simple Script for Form data into Python Server Application </Title>
+<h1>Common form and layout for your User to interact<h1>
+
+<p> We will use the Python server side script, with this layout form itself to post data to the dictionary array
+The CGI script is independent of the HTML used to interact with the User/Client </p><HR>
+
+<FORM method=POST action="cgi-bin/pyformRQ.py">
+	<h3> Please Complete the following form and click Submit </h3>
+	<P><TABLE border cellpadding=3>
+	<tr>
+		<th align=right>Input heading one:
+		<td><input type=text name=name>
+	<tr>
+		<th align =right>Input heading two:
+		<td><input type=radio name=input2 value=small> Small
+		<td><input type=radio name=input2 value=medium> medium
+		<td><input type=radio name=input2 value=large> large
+		
+	<tr>
+		<th align=right>Input heading three:
+		<td><select name=option>
+			<option>Developer
+			<option>Manager
+			<option>Student
+			<option>Evangelist
+			<option>Other
+		</select>
+	</tr>
+		<th align=right>Input heading four:
+		<td><p><input type=checkbox name=language value=Python>Pythonista
+			<p><input type=checkbox name=language value=Perl> Perl
+			<p><input type=checkbox name=language value=TCL>TCL
+		<TR>
+			<TH align=right>Comments:
+			<td><textarea name=commen cols=30 rows=2> Enter spam here </textarea>
+		<TR>
+			<Th align=right> Comments:
+			<td colspan=2 align=center>
+			<input type=submit value="Submit">
+			<input type=reset value="Reset">
+			
+		</table>
+	</form>
+	</body>
+	</html>
